@@ -30,6 +30,9 @@ ModelImporter:
     400022: Panel_6
     400024: Panel_6_end
     2100000: No Name
+    2100002: mat_test
+    2100004: mat_unit_walls
+    2100006: mat_unit_door
     2300000: unit
     2300002: unit_door
     2300004: //RootNode

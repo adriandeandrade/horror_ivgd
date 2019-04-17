@@ -7,24 +7,84 @@ ModelImporter:
     100002: Cube.001
     100004: //RootNode
     100006: Sphere
+    100008: flashlight_base
+    100010: flashlight_handle
+    100012: DuctTape
+    100014: emf_base
+    100016: emf_light_1
+    100018: emf_light_2
+    100020: emf_light_3
+    100022: emf_light_4
+    100024: emf_light_5
+    100026: flashlight_lightbulb
+    100028: flashlight_on_off
     400000: Cube
     400002: Cube.001
     400004: //RootNode
     400006: Sphere
+    400008: flashlight_base
+    400010: flashlight_handle
+    400012: DuctTape
+    400014: emf_base
+    400016: emf_light_1
+    400018: emf_light_2
+    400020: emf_light_3
+    400022: emf_light_4
+    400024: emf_light_5
+    400026: flashlight_lightbulb
+    400028: flashlight_on_off
     2100000: mat_glass
     2100002: No Name
     2100004: mat_base
+    2100006: mat_plastic_handle
+    2100008: mat_led_light
+    2100010: mat_duct_tape
+    2100012: mat_emf_base
+    2100014: mat_on_off
     2300000: Cube
     2300002: Cube.001
     2300004: Sphere
     2300006: //RootNode
+    2300008: flashlight_base
+    2300010: flashlight_handle
+    2300012: DuctTape
+    2300014: emf_base
+    2300016: emf_light_1
+    2300018: emf_light_2
+    2300020: emf_light_3
+    2300022: emf_light_4
+    2300024: emf_light_5
+    2300026: flashlight_lightbulb
+    2300028: flashlight_on_off
     3300000: Cube
     3300002: Cube.001
     3300004: Sphere
     3300006: //RootNode
+    3300008: flashlight_base
+    3300010: flashlight_handle
+    3300012: DuctTape
+    3300014: emf_base
+    3300016: emf_light_1
+    3300018: emf_light_2
+    3300020: emf_light_3
+    3300022: emf_light_4
+    3300024: emf_light_5
+    3300026: flashlight_lightbulb
+    3300028: flashlight_on_off
     4300000: Cube
     4300002: Cube.001
     4300004: Sphere
+    4300006: flashlight_base
+    4300008: flashlight_handle
+    4300010: emf_light_3
+    4300012: emf_light_4
+    4300014: emf_light_5
+    4300016: emf_light_1
+    4300018: emf_light_2
+    4300020: DuctTape
+    4300022: emf_base
+    4300024: flashlight_lightbulb
+    4300026: flashlight_on_off
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -39,8 +99,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_duct_tape
+    second: {fileID: 2100000, guid: d75caabcd7e80824db52e26bc87fe1d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_emf_base
+    second: {fileID: 2100000, guid: 6c136abd61ddb5840a7a07c2c27b79b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_glass
     second: {fileID: 2100000, guid: fcfd83ae11c4f7246ac703a231efc43c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_led_light
+    second: {fileID: 2100000, guid: 78e8661d3752860468e3bd806e40249f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_on_off
+    second: {fileID: 2100000, guid: 424f95dbea393634a85a7a772280e410, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_plastic_handle
+    second: {fileID: 2100000, guid: 08f763339b625d44ea399e222e8fb395, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
