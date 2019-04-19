@@ -319,6 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3729595673062937659}
   - component: {fileID: 3729595673051858207}
+  - component: {fileID: 4124743560451606702}
   m_Layer: 0
   m_Name: unit_door
   m_TagString: Untagged
@@ -396,6 +397,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.0137925, z: 0.000011561016}
     m_Extent: {x: 0.012003214, y: 0.0137835145, z: 0.00021727673}
   m_DirtyAABB: 0
+--- !u!65 &4124743560451606702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729595673063426075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4006429, y: 2.7567024, z: 0.04345534}
+  m_Center: {x: 0, y: -0.000000834465, z: 0.00000012898818}
 --- !u!1 &3729595673063426077
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +497,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3729595673062937663}
   - component: {fileID: 3729595673056050143}
+  - component: {fileID: 3836845683533816522}
+  - component: {fileID: 850483703575937033}
   m_Layer: 0
   m_Name: pfb_storage_unit
   m_TagString: Untagged
@@ -527,6 +543,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3836845683533816522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729595673063426079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3181721, y: 3.0376477, z: 3.0376468}
+  m_Center: {x: 1.3597376, y: 1.5439093, z: 0.0078372955}
+--- !u!65 &850483703575937033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729595673063426079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3181721, y: 3.0376477, z: 3.0376468}
+  m_Center: {x: -1.359738, y: 1.5439093, z: 0.0078372955}
 --- !u!1 &7518409019585889484
 GameObject:
   m_ObjectHideFlags: 0
