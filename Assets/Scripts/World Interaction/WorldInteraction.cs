@@ -5,10 +5,12 @@ using UnityEngine;
 public class WorldInteraction : MonoBehaviour
 {
     [SerializeField] private LayerMask interactionLayer;
+    [SerializeField] private float interactionDistance;
 
-    bool isPressingInteractionButton;
+    bool canInteract;
 
     Camera cam;
+    InteractableObject lastObjectInteracted;
 
     private void Awake()
     {
@@ -21,6 +23,14 @@ public class WorldInteraction : MonoBehaviour
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         Debug.DrawLine(ray.origin, cam.transform.forward * 5000000, Color.red);
+
+        if (canInteract)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                lastObjectInteracted.Interact();
+            }
+        }
     }
 
     private void GetInteraction()
@@ -30,21 +40,34 @@ public class WorldInteraction : MonoBehaviour
 
         if (Physics.Raycast(interactionRay.origin, cam.transform.forward, out interactionInfo, Mathf.Infinity, interactionLayer))
         {
-            bool hit = false;
-
             if (interactionInfo.collider != null)
             {
-                hit = true;
-            }
-            else
-            {
-                hit = false;
-            }
-
-            if (hit)
-            {
-                //interactionInfo.collider.GetComponent<Interactable>().Interact();
+                lastObjectInteracted = interactionInfo.collider.GetComponent<InteractableObject>();
+                float distanceToObject = GetDistance(interactionInfo.collider.transform.position);
+                if (distanceToObject <= interactionDistance)
+                {
+                    canInteract = true;
+                    lastObjectInteracted.ActivateInteractionUI();
+                }
+                else
+                {
+                    canInteract = false;
+                    lastObjectInteracted.DeactivateInteractionUI();
+                }
             }
         }
+        else
+        {
+            if(lastObjectInteracted != null)
+            {
+                canInteract = false;
+                lastObjectInteracted.DeactivateInteractionUI();
+            }
+        }
+    }
+
+    private float GetDistance(Vector3 objectPos)
+    {
+        return Vector3.Distance(transform.position, objectPos);
     }
 }

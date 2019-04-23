@@ -17,6 +17,7 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private float maxDistanceFromWall = 5f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform cameraTransform;
+    [SerializeField] private Transform targetTransform;
     [SerializeField] private MouseLook mouseLook;
     [SerializeField] private LayerMask groundMask;
 
@@ -108,7 +109,7 @@ public class PlayerMotor : MonoBehaviour
 
     private void RotateView()
     {
-        mouseLook.LookRotation(transform, cameraTransform);
+        mouseLook.LookRotation(targetTransform, cameraTransform);
     }
 
     float CalculateJumpVerticalSpeed()
