@@ -16,7 +16,6 @@ public class InteractableObject : MonoBehaviour
     bool hasInteracted = false;
     bool active;
 
-
     // Components
 
     private void Awake()
